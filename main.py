@@ -19,7 +19,10 @@ def count_words():
 
     counter = {}  # a dictionary with key: word in textfile and value: value count of word.
     for i in new_txt.split():
-        counter[i] = counter.get(i, 0) + 1
+        counter[i] = counter.get(i, 0) + 1 
+        # Gets the value of each key. The value is the word count
+        # if the word is not in counter.keys(), .get() assigns a default value of 0 and then '+1' serves as the increment.
+        # Depending on how many times the word occurs in the string.
  
     return counter
 
